@@ -1,0 +1,156 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #6e3b6e, #ffb7b7); /* Gradient yang lebih berani */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 40px;
+    color: #4a4a4a;
+    margin-bottom: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.input-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 15px;
+    font-size: 18px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #a24d77; /* Warna fokus lebih berani */
+    box-shadow: 0 0 10px rgba(162, 77, 119, 0.3);
+}
+
+button {
+    padding: 15px 25px;
+    background-color: #a24d77; /* Warna tombol utama */
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 6px 12px rgba(162, 77, 119, 0.2);
+}
+
+button:hover {
+    background-color: #8c3e6b; /* Warna tombol saat hover */
+    transform: translateY(-3px);
+}
+
+button:active {
+    background-color: #732d5a; /* Warna tombol saat diklik */
+    transform: translateY(0);
+}
+
+.status-message {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.status-message.success {
+    color: #27ae60; /* Warna pesan sukses */
+}
+
+.status-message.error {
+    color: #c0392b; /* Warna pesan error */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+li:hover {
+    background-color: #e9ecef;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+li span {
+    flex: 1;
+    font-size: 18px;
+    font-weight: 400;
+    color: #4a4a4a;
+}
+
+li button {
+    background-color: #e74c3c; /* Warna tombol hapus */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(231, 76, 60, 0.2);
+}
+
+li button:hover {
+    background-color: #c0392b; /* Warna tombol hapus saat hover */
+    transform: translateY(-2px);
+}
+
+li button:active {
+    background-color: #a93226; /* Warna tombol hapus saat diklik */
+    transform: translateY(0);
+}
+
+li input[type="checkbox"] {
+    margin-right: 15px;
+    transform: scale(1.3);
+    cursor: pointer;
+}
